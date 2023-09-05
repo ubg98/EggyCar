@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>OvO Unblocked - ubg235 GameDistribution</title>
+	<title>Eggy Car Unblocked - ubg235 GameDistribution</title>
 	
 	<!-- Standardised web app manifest -->
 	<link rel="manifest" href="appmanifest.json" />
@@ -14,6 +14,13 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
 	<meta name="HandheldFriendly" content="true" />
+
+	<meta property="og:title" content="Eggy Car" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gameonhai.com" />
+    <meta property="og:image" content="https://gameonhai.com/intantgames/banners/eggycar.jpg" />
+    <meta property="og:site_name" content="Eggy Car" />
+    <meta property="og:description" content="Eggy Car is a hill climbing car game with a egg on top of it. There is only one important task, DON'T DROP THE EGG. Drive carefully and cover maximum distance. It is not easy as well. Good Luck! ."/>
 	
 	<!-- Chrome for Android web app tags -->
 	<meta name="mobile-web-app-capable" content="yes" />
@@ -37,11 +44,12 @@
 			touch-action: none;
 			-ms-touch-action: none;
 		}
+		@font-face {
+		  font-family: Changa One;
+		  src: url(changaone_regular.ttf);
+		}
     </style>
 	
-	<link href="animate.css" rel="stylesheet" type="text/css" />
-	<link href="hmmg_layoutTransition.css" rel="stylesheet" type="text/css" />
-	<link href="jquery.gritter.css" rel="stylesheet" type="text/css" />
 
 </head> 
  
@@ -59,12 +67,14 @@
 	})();
 	</script>
 	
+	
+	
 	<!-- The canvas must be inside a div called c2canvasdiv -->
 	<div id="c2canvasdiv">
 	
 		<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
 		ID the runtime looks for in the jQuery events above (ready() and cr_sizeCanvas()). -->
-		<canvas id="c2canvas" width="640" height="640">
+		<canvas id="c2canvas" width="1280" height="720">
 			<!-- This text is displayed if the visitor's browser does not support HTML5.
 			You can change it, but it is a good idea to link to a description of a browser
 			and provide some links to download some popular HTML5-compatible browsers. -->
@@ -77,16 +87,13 @@
 		
 	</div>
 	
+	
+	
 	<!-- Pages load faster with scripts at the bottom -->
 	
 	<!-- Construct 2 exported games require jQuery. -->
-	<script src="jquery-3.4.1.min.js"></script>
+	<script src="jquery-2.1.1.min.js"></script>
 
-	<script src="GameAnalytics.js"></script>
-	<script src="Tween.js"></script>
-	<script src="html2canvas.min.js"></script>
-	<script src="jquery.gritter.js"></script>
-	<script src="howler.js"></script>
 
 	
     <!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
@@ -140,6 +147,8 @@
 			}
 		};
     </script>
-    <script src="js/analytics_ubg_v1_4.js"></script>
+    <div style="display: none;">
+		<a href="https://gameonhai.com" target="_blank" style=""></a>
+	</div>
 </body> 
 </html> 
